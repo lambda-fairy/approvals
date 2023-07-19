@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    font: 24px/1.5 "Libre Franklin", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+    color: #333;
+
+    --purple: #9859a8;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    flex: 1;
+    max-width: 50rem;
+    border: 3px double var(--purple);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: .2rem .2rem .2rem #0003;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+:any-link {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+@media (min-width: 40rem) {
+    main {
+        display: flex;
+        gap: 1rem;
+    }
+
+    section {
+        flex: 1;
+    }
+}
+
+h2 {
+    border-bottom: 1px solid var(--purple);
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
